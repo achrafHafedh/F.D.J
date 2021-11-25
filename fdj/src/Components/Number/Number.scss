@@ -1,0 +1,44 @@
+.container-number {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+
+  .number {
+    border-radius: 50%;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    width: 25px;
+    height: 25px;
+  }
+
+  input:checked {
+    ~ .number {
+      background: #263e83;
+      color: white;
+    }
+    ~ label {
+      background: #263e83;
+      color: white;
+    }
+  }
+
+  label {
+    position: absolute;
+    cursor: pointer;
+    left: 4px;
+    top: 4px;
+    color: #263e83;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    &.small {
+      padding: 0 5px;
+    }
+  }
+
+  .visually-hidden {
+    position: absolute;
+    left: -100vw;
+  }
+}

@@ -1,0 +1,41 @@
+.container-star {
+  position: relative;
+  width: 35px;
+  display: inline-block;
+  margin: 0 5px;
+
+  .star::after {
+    content: "\2605";
+    font-size: 2rem;
+    color: white;
+  }
+
+  input:checked {
+    ~ .star::after {
+      content: "\2605";
+      color: #fc0;
+    }
+    ~ label {
+      color: white;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    color: #fc0;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 4px 10px;
+    font-weight: bold;
+    &.big {
+      left: -4px;
+    }
+  }
+
+  .visually-hidden {
+    position: absolute;
+    left: -100vw;
+  }
+}
