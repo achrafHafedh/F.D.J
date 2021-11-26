@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cost/> should render Cost with value 1`] = `
+<div>
+  <div
+    class="cost"
+  >
+    Mise totale 
+    2.5
+  </div>
+</div>
+`;

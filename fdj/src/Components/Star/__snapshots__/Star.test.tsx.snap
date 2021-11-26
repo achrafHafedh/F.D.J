@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Star/> should render Star with value 1`] = `
+<div>
+  <div
+    class="container-star"
+  >
+    <input
+      class="visually-hidden"
+      id="star-1"
+      type="checkbox"
+      value="1"
+    />
+    <label
+      class="big"
+      for="star-1"
+    >
+      1
+    </label>
+    <div
+      class="star"
+    />
+  </div>
+</div>
+`;
