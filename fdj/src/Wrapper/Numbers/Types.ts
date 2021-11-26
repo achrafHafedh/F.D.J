@@ -1,1 +1,3 @@
-export type NumbersProps = {};
+export type NumbersProps = {
+  dispatch: Function;
+};

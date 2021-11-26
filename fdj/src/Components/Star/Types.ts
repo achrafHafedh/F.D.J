@@ -1,6 +1,6 @@
 export type StarProps = {
   index: number;
   value: number;
-  onClick: Function;
+  dispatch: Function;
   className: string;
 };
