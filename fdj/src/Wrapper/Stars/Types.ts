@@ -1,1 +1,3 @@
-export type StarsProps = {};
+export type StarsProps = {
+  dispatch: Function;
+};

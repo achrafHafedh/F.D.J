@@ -5,12 +5,12 @@ import { NUMBERS_LENGTH } from "../../Config";
 
 import "./Numbers.scss";
 
-const Numbers: FunctionComponent<NumbersProps> = ({}) => {
+const Numbers: FunctionComponent<NumbersProps> = ({ dispatch }) => {
   const renderNumbers = () => {
     const listNumber = [];
     for (let index = 0; index < NUMBERS_LENGTH; index++) {
       listNumber.push(
-        <Number className={index < 9 ? "small" : ""} index={index} value={index + 1} onClick={() => ""} />
+        <Number key={index} dispatch={dispatch} className={index < 9 ? "small" : ""} index={index} value={index + 1} />
       );
     }
     return listNumber;
