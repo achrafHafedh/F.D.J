@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Number/> should render Number component 1`] = `
+<div>
+  <div
+    class="container-number"
+  >
+    <input
+      class="visually-hidden"
+      id="number-1"
+      type="checkbox"
+      value="1"
+    />
+    <label
+      class="big"
+      for="number-1"
+    >
+      1
+    </label>
+    <div
+      class="number"
+    />
+  </div>
+</div>
+`;
